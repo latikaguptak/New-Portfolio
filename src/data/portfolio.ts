@@ -7,7 +7,8 @@ export const personalInfo = {
     github: "https://github.com/latikaguptak",
     linkedin: "https://www.linkedin.com/in/latika-gupta-varshney/",
     twitter: "https://x.com/LatikaGupta02",
-    email: "latika.gupta.108@gmail.com"
+    email: "latika.gupta.108@gmail.com",
+    Resume:"https://lavender-elisa-74.tiiny.site"
   }
 };
 
@@ -23,47 +24,34 @@ export const skills = [
   // }
 ];
 
-// Experience data
+
 export const experience = [
   {
     title: "Frontend Developer",
     company: "Tata Consultancy Services",
     period: "2022 - Present",
     achievements: [
-      "Developed the "
+      "Developed the  "
     ]
   },
-  // {
-  //   title: "Mobile Developer",
-  //   company: "Mobile Apps Co.",
-  //   period: "2018 - 2020",
-  //   achievements: [
-  //     "Developed cross-platform mobile applications using React Native",
-  //     "Optimized app performance resulting in 30% faster load times",
-  //     "Integrated analytics and crash reporting systems"
-  //   ]
-  // }
+ 
 ];
 
 // Education data
 export const education = [
-  // {
-  //   degree: "Master of Computer Science",
-  //   school: "Tech University",
-  //   period: "2016 - 2018",
-  //   description: "Specialized in Software Engineering and Mobile Computing"
-  // },
+  
   {
     degree: "Bachelor of Technology",
     school: "Dr. A. P. J. Abdul Kalam Technical University",
     period: "2018 - 2022",
-    description: "Focus on Web Development and Database Systems"
+    description: "Focus on Computer system and engineering of the software developent. Learn the different programming languages and the basic of computer system. Learn the Database Management, Data Structures and Algorithm, Web Development, Operating System and different programming Languages like Python, C, JavaScript, C++ etc."
   }
 ];
 
-// Projects data with more projects to ensure "View All" button appears
+
 export const projects = [
   {
+    id:1,
     title: "Snap Style",
     description: "This application is a modern wardrobe management tool built with React.js and TypeScript. It allows users to organize their clothing and accessories digitally, plan outfits, and curate personal styles.",
     image: "/snapstyle.png",
@@ -95,8 +83,9 @@ export const projects = [
     team: ["Latika Gupta", "Aman Gupta"]
   },
   {
+    id:2,
     title: "Lunar-Flow",
-    description: "unaFlow is a modern, feature-rich web application designed specifically for women to effortlessly track and manage their menstrual cycles. The platform empowers users with tools to log period dates, predict upcoming cycles, monitor health trends, and receive personalized insights—all in a secure and user-friendly environment. Built with cutting-edge technologies, LunaFlow ensures a seamless and interactive experience tailored to meet the unique needs of every woman.",
+    description: "LunarFlow is a modern, feature-rich web application designed specifically for women to effortlessly track and manage their menstrual cycles. The platform empowers users with tools to log period dates, predict upcoming cycles, monitor health trends, and receive personalized insights—all in a secure and user-friendly environment. Built with cutting-edge technologies, LunaFlow ensures a seamless and interactive experience tailored to meet the unique needs of every woman.",
     image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=1000",
     tags: ["React", "TypeScript", "React-Recoil", "Next-Js"],
     githubUrl: "https://github.com/latikaguptak/Lunar-Flow.git",
@@ -125,56 +114,5 @@ export const projects = [
     duration: "8 months",
     team: ["Latika Gupta", "Aman Gupta"]
   },
-  {
-    title: "Task Management System",
-    description: "A collaborative task management system with real-time updates, team collaboration features, and advanced project tracking capabilities.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    features: [
-      "Real-time task updates",
-      "Team collaboration tools",
-      "Project analytics",
-      "File sharing",
-      "Calendar integration"
-    ],
-    technologies: [
-      "React",
-      "Node.js",
-      "Socket.io",
-      "MongoDB",
-      "Express",
-      "TypeScript"
-    ],
-    role: "Backend Developer",
-    duration: "5 months",
-    team: ["Latika Gupta", "Aman Gupta"]
-  },
-  {
-    title: "AI-Powered Chat Application",
-    description: "An intelligent chat application featuring natural language processing, sentiment analysis, and automated responses.",
-    image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "Python", "TensorFlow", "WebSocket"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    features: [
-      "Natural language processing",
-      "Sentiment analysis",
-      "Automated responses",
-      "Multi-language support",
-      "Voice integration"
-    ],
-    technologies: [
-      "React",
-      "Python",
-      "TensorFlow",
-      "FastAPI",
-      "PostgreSQL",
-      "Redis"
-    ],
-    role: "ML Engineer",
-    duration: "7 months",
-    team: ["Latika Gupta", "Aman Gupta"]
-  }
+  
 ];

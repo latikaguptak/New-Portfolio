@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { FileText, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '../../data/portfolio';
 import { useLoading } from '../../contexts/LoadingContext';
@@ -120,10 +120,12 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {platform === 'github' && <Github size={24} />}
-              {platform === 'linkedin' && <Linkedin size={24} />}
-              {platform === 'twitter' && <Twitter size={24} />}
-              {platform === 'email' && <Mail size={24} />}
+              {platform === 'github' && <span title='Github'><Github size={24} name='GitHub'/></span>}
+              {platform === 'linkedin' && <span title='Linkedin'><Linkedin size={24} name='Linkedin'/></span>}
+              {platform === 'twitter' && <span title='Twitter'><Twitter size={24} name='Twitter'/></span>}
+              {platform === 'email' && <span title='Mail'><Mail size={24} name='Mail' /></span>}
+              {platform === 'Resume' && <span title='Resume'><FileText size={24} name='Resume'/> </span>}
+            
             </motion.a>
           ))}
         </motion.div>
