@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Briefcase, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { experience } from '../../data/portfolio';
@@ -16,7 +16,22 @@ const item = {
   show: { opacity: 1, y: 0 }
 };
 
+
 export function Experience() {
+  const containerRef = useRef<HTMLUListElement | null>(null);
+
+
+  const scrollLeft = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
   return (
     <div className="py-16 px-6 bg-white dark:bg-gray-900">
       <motion.h2
@@ -87,7 +102,7 @@ export function Experience() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="space-y-2 text-gray-600 dark:text-gray-300"
+              className="space-y-2 text-gray-600 dark:text-gray-300 mb-2"
             >
               {job.achievements.map((achievement, i) => (
                 <motion.li
@@ -103,6 +118,89 @@ export function Experience() {
                 </motion.li>
               ))}
             </motion.ul>
+            {/* <motion.ul
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="space-y-2 text-gray-600 dark:text-gray-300 flex-col flex"
+            >
+            {job.technologies.map((achievement, i) => (
+                <motion.li
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 + i * 0.1 }}
+                  className="flex items-start justify-center "
+                  
+                >
+                  <span className="mr-2 text-purple-500 dark:text-purple-400">•</span>
+                  <span>{achievement}</span>
+                </motion.li>
+              ))}
+            </motion.ul> */}
+            {/* <motion.ul
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.4 }}
+  className="pace-x-4 text-gray-600 dark:text-gray-300 flex flex-nowrap "
+>
+  <label > Teachnologies used </label>
+  {job.technologies.map((achievement, i) => (
+    <motion.li
+      key={i}
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.5 + i * 0.1 }}
+      className="flex items-start justify-center"
+    >
+      <span className="mr-2 text-purple-500 dark:text-purple-400">•</span>
+      <span>{achievement}</span>
+    </motion.li>
+  ))}
+</motion.ul> */}
+      <label className='p-3 text-purple-600 dark:text-purple-300 font-medium space-x-4  '> Technologies </label>
+      <button
+        onClick={scrollLeft}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full z-10"
+      >
+        &#8592;
+      </button>
+      
+      <motion.ul
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4 }}
+        className="space-x-4 text-gray-600 dark:text-gray-300 flex-row flex flex-nowrap overflow-hidden mt-2"
+        ref={containerRef}
+      >
+        
+        {job.technologies.map((achievement, i) => (
+          <motion.li
+            key={i}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 + i * 0.1 }}
+            className="flex items-start justify-center"
+          >
+            <span className="mr-2 text-purple-500 dark:text-purple-400">•</span>
+            <span>{achievement}</span>
+          </motion.li>
+        ))}
+      </motion.ul>
+      <button
+        onClick={scrollRight}
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full z-10"
+      >
+        &#8594;
+      </button>
+
+
 
             <motion.div
               initial={{ scale: 0 }}
@@ -111,6 +209,8 @@ export function Experience() {
               transition={{ type: "spring", stiffness: 200, delay: 0.6 }}
               className="absolute -bottom-12 -right-12 w-24 h-24 bg-gradient-to-br from-purple-200 to-pink-200 dark:from-purple-800 dark:to-pink-800 rounded-full opacity-20 group-hover:opacity-30 transition-opacity"
             />
+             
+
           </motion.div>
         ))}
       </motion.div>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FileText, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '../../data/portfolio';

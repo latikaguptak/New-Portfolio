@@ -31,7 +31,25 @@ export const experience = [
     company: "Tata Consultancy Services",
     period: "2022 - Present",
     achievements: [
-      "Developed the  "
+      "Developed a responsive web application compatible with all major browsers and devices, leveraging React.js, JavaScript, and CSS.Optimized the user interface for a seamless, mobile-first experience, ensuring cross-browser compatibility and increasing user engagement by 20%.",
+      "Integrated frontend with REST-APIs to display real-time analytical data using React-ECharts and tables, enhancing user experience with visually appealing and interactive features. Ensured smooth data flow and up-to-date content for seamless user interaction.",
+      "Developed a responsive web application using React and Redux , optimizing performance through code splitting and lazy loading, which improved page load times by 60% and increased mobile user retention by 25%."
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Redux",
+      "React Recoil",
+      "React-ECharts",
+      "React-Table",
+      "React-Router",
+      "React Navigation",
+      "Lazy Loading"
+
     ]
   },
  
