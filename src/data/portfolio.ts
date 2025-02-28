@@ -97,14 +97,14 @@ export const projects = [
       "Vite"
     ],
     role: "Frontend Developer",
-    duration: "6 months",
+    duration: "3 months",
     team: ["Latika Gupta", "Aman Gupta"]
   },
   {
     id:2,
     title: "Lunar-Flow",
     description: "LunarFlow is a modern, feature-rich web application designed specifically for women to effortlessly track and manage their menstrual cycles. The platform empowers users with tools to log period dates, predict upcoming cycles, monitor health trends, and receive personalized insights—all in a secure and user-friendly environment. Built with cutting-edge technologies, LunaFlow ensures a seamless and interactive experience tailored to meet the unique needs of every woman.",
-    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=1000",
+    image: "./LunarFlow.png",
     tags: ["React", "TypeScript", "React-Recoil", "Next-Js"],
     githubUrl: "https://github.com/latikaguptak/Lunar-Flow.git",
     liveUrl: "https://lunar-flow.vercel.app/",
@@ -129,8 +129,37 @@ export const projects = [
     ], 
 
     role: "Frontend Developer",
-    duration: "8 months",
+    duration: "3 months",
     team: ["Latika Gupta", "Aman Gupta"]
   },
+  {
+    id:3,
+    title: "Motion Store",
+    description: "Motion Store is an e-commerce web application built using React, Redux Toolkit, JavaScript, and Tailwind CSS. The project features a clean, modern home page showcasing various products and a shopping cart system to manage selected items. With React for building interactive UI components and Redux Toolkit for efficient state management, the app provides a smooth user experience. Tailwind CSS is used for responsive, customizable styling, ensuring a visually appealing and mobile-friendly interface. The app demonstrates key skills in modern front-end development, including state management, responsive design, and the integration of e-commerce functionalities.",
+    image: "./MotionStore.png",
+    tags: ["React", "Redux Toolkit", "JavaScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/latikaguptak/Shopping-Cart",
+    liveUrl: "https://shopping-cart-tau-six-38.vercel.app/",
+    features: [
+      "Cycle Tracking and Prediction",
+      "Insights and Analytics",
+      "Health and Wellness Resources",
+      "Accessible navigation with keyboard and screen-reader support",
+      "Customizable Themes",
+    ],
+    technologies: [
+      "React",
+      "JavaScript",
+      "Redux-toolkit",
+      "tailwindcss",
+      "Tostify",
+      "LocalStorage"
+
+    ], 
+
+    role: "Frontend Developer",
+    duration: "1 months",
+    team: ["Latika Gupta", "Aman Gupta"]
+  }
   
 ];
