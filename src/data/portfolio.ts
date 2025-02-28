@@ -2,7 +2,7 @@
 export const personalInfo = {
   name: "Latika Gupta",
   title: "Frontend Developer",
-  description: "Passionate developer with expertise in building modern web and mobile applications. Specializing in React, React Native, and TypeScript.",
+  description: "Passionate developer with expertise in building modern web with mobile responsive. Specializing in Frontent technologies like JavaScript, Reactjs , and TypeScript.",
   social: {
     github: "https://github.com/latikaguptak",
     linkedin: "https://www.linkedin.com/in/latika-gupta-varshney/",

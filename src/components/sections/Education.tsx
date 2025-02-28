@@ -34,7 +34,7 @@ export function Education() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="max-w-4xl mx-auto grid gap-8 md:grid-cols-2"
+        className="max-w-4xl mx-auto flex flex-row gap-8 "
       >
         {education.map((edu, index) => (
           <motion.div
